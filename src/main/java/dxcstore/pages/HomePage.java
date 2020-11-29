@@ -48,11 +48,8 @@ public class HomePage extends PageBase {
 	public void navigateToLoginPage() {
 		chooseSecondLevelItem(driver, myAccountBtn, loginLink);
 
-		// clickOnBtn(myAccountBtn);
-		// clickOnBtn(loginLink);
 	}
 
-	// For login and Register more generic
 	public void navigateToPageUsingAction(String firstElement, String secondElement) {
 		a = new Actions(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -61,7 +58,6 @@ public class HomePage extends PageBase {
 				.build().perform();
 	}
 
-	// For items that has no Dropdown
 	public void navigateToMenuItemFirstLevel(String menuItem) {
 		clickOnBtn(driver, By.xpath("//ul/li/a[contains(text(),'" + menuItem + "')]"));
 	}
@@ -70,7 +66,6 @@ public class HomePage extends PageBase {
 		clickOnBtn(driver, By.xpath("//span[contains(text(),'" + menuItem + "')]"));
 	}
 
-	// For items that has a dropdown
 	public void navigateToMenuItemSecondLevel(String menuItem, String secondLvlMenuItem) {
 		ElementActions.click(driver, By.xpath("//ul/li/a[contains(text(),'" + menuItem + "')]"));
 		ElementActions.click(driver, By.xpath("//a[contains(text(),'" + secondLvlMenuItem + "')]"));

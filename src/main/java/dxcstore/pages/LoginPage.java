@@ -29,8 +29,7 @@ public class LoginPage extends PageBase {
 		setTxt(driver, passwordField, password);
 		clickOnBtn(driver, submitBtn);
 		return true;
-		//return isUserLoggedIn();
-
+		
 	}
 
 	public boolean isUserLoggedIn() {
@@ -48,8 +47,6 @@ public class LoginPage extends PageBase {
 	public String getEmailAndPasswordErrorMessageDisplayed() {
 		String validationMessage = null;
 		if (ElementActions.isElementDisplayed(driver, emailPasswordValidation)) {
-			// System.out.println("Error message is displayed:
-			// "+driver.findElement(emailPasswordValidation).getText());
 			validationMessage = ElementActions.getText(driver, emailPasswordValidation);
 			ReportManager.log("Error message is displayed successfully: " + validationMessage);
 			return validationMessage;

@@ -21,8 +21,6 @@ public class PageBase {
    
 		
 	public void setTxt(WebDriver driver, By element, String text){
-        //clearTxt(element);
-        //driver.findElement(element).sendKeys(text);
         ElementActions.type(driver, element, text);
     }
 	
@@ -46,7 +44,6 @@ public class PageBase {
 	}
 	
     public void clickOnBtn(WebDriver driver,By element){
-        //driver.findElement(element).click();
         ElementActions.click(driver, element);
     }
 

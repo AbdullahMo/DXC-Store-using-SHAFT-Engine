@@ -1,0 +1,11 @@
+[ReportManager] AfterMethod is called @30-11-2020 01:17:33.0596 AM
+[ReportManager] Test Case is passed @30-11-2020 01:17:33.0597 AM
+[ReportManager] Close All Browser @30-11-2020 01:17:33.0597 AM
+[ReportManager] Successfully Closed All Browsers. @30-11-2020 01:17:34.0398 AM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-11-2020 01:17:34.0399 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v4.3]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log: ] @30-11-2020 01:17:34.0403 AM

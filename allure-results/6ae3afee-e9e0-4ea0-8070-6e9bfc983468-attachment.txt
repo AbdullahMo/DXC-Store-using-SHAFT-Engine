@@ -1,0 +1,132 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: [SHAFT Engine v4.3]
+################################################################################################################################################
+[ReportManager] File Action [getAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @30-11-2020 01:15:53.0712 AM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @30-11-2020 01:15:53.0752 AM
+[ReportManager] Identifying OS/Browser combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @30-11-2020 01:15:53.0758 AM
+[ReportManager] Successfully Opened Google Chrome. @30-11-2020 01:16:01.0053 AM
+[ReportManager] URL is : http://opencart.abstracta.us/index.php?route=common/home @30-11-2020 01:16:01.0075 AM
+[ReportManager] Target URL: [http://opencart.abstracta.us/index.php?route=common/home] @30-11-2020 01:16:01.0079 AM
+[ReportManager] Initial URL: [data:,] @30-11-2020 01:16:01.0961 AM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201130-011553", Target File: "\1606691765779_beforeMethod.gif"]. @30-11-2020 01:16:06.0181 AM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [http://opencart.abstracta.us/index.php?route=common/home]. @30-11-2020 01:16:07.0593 AM
+[ReportManager] Successfully created attachment [Video Recording - beforeMethod] @30-11-2020 01:16:09.0821 AM
+[ReportManager] Successfully created attachment [Animated Gif - beforeMethod] @30-11-2020 01:16:09.0826 AM
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[dxc.store.testcases.ShoppingCart_ConfirmOrder.UserCanAddItemsToShoppingCartAndConfirmOrder]
+################################################################################################################################################
+[ReportManager] Element Action [type] successfully performed. With the following test data [anyemailtestasd12377@hotmail.com]. @30-11-2020 01:16:13.0362 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [SuperSecretPassword!]. @30-11-2020 01:16:13.0875 AM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201130-011553", Target File: "\1606691774731_UserCanAddItemsToShoppingCartAndConfirmOrder.gif"]. @30-11-2020 01:16:14.0834 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Login]. @30-11-2020 01:16:17.0938 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [MP3 Players]. @30-11-2020 01:16:20.0720 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Show All MP3 Players]. @30-11-2020 01:16:24.0266 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:24.0377 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [ADD TO CART]. @30-11-2020 01:16:26.0807 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:26.0911 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [iPod Shuffle]. @30-11-2020 01:16:27.0044 AM
+[ReportManager] Your Item: iPod Shuffle has been added to the cart successfully @30-11-2020 01:16:27.0044 AM
+[ReportManager] Checking that item name is displayed..... @30-11-2020 01:16:27.0061 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:16:27.0064 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:27.0165 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [1 item(s) - $100.00]. @30-11-2020 01:16:29.0276 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:29.0376 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [iPod Shuffle]. @30-11-2020 01:16:29.0523 AM
+[ReportManager] Your item has been found successfully: iPod Shuffle @30-11-2020 01:16:29.0523 AM
+[ReportManager] Checking that item is displayed in carts menu..... @30-11-2020 01:16:29.0524 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:16:29.0525 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:29.0634 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [View Cart]. @30-11-2020 01:16:32.0213 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:32.0318 AM
+[ReportManager] Found item in cart: By.xpath: //form/div/table/tbody/tr[1]/td[2]/a @30-11-2020 01:16:32.0319 AM
+[ReportManager] Checking that item is displayed in shopping cart page..... @30-11-2020 01:16:32.0320 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:16:32.0320 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [1]. @30-11-2020 01:16:32.0766 AM
+[ReportManager] Element Action [click] successfully performed. @30-11-2020 01:16:36.0084 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:36.0188 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [$100.00]. @30-11-2020 01:16:36.0320 AM
+[ReportManager] Found Item Unit Price as Expected: By.xpath: //form/div/table/tbody/tr[1]/td[5] @30-11-2020 01:16:36.0321 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:36.0424 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [$100.00]. @30-11-2020 01:16:36.0578 AM
+[ReportManager] Found Item Total Price as Expected: By.xpath: //form/div/table/tbody/tr[1]/td[6] @30-11-2020 01:16:36.0578 AM
+[ReportManager] Checking that item price is as expected..... @30-11-2020 01:16:36.0579 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:16:36.0580 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:36.0676 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Checkout]. @30-11-2020 01:16:42.0207 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:42.0339 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [new]. @30-11-2020 01:16:44.0599 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:44.0708 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Abdullah]. @30-11-2020 01:16:45.0150 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Mohamed]. @30-11-2020 01:16:45.0540 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [911 Groove Street]. @30-11-2020 01:16:45.0959 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Detroit]. @30-11-2020 01:16:46.0382 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:47.0428 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Continue]. @30-11-2020 01:16:50.0662 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:51.0807 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [new]. @30-11-2020 01:16:53.0942 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:54.0043 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Abdullah]. @30-11-2020 01:16:54.0448 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Mohamed]. @30-11-2020 01:16:54.0827 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [911 Groove Street]. @30-11-2020 01:16:55.0225 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Detroit]. @30-11-2020 01:16:55.0588 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:55.0868 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Continue]. @30-11-2020 01:16:59.0208 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:16:59.0855 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [This is an automated test comment]. @30-11-2020 01:17:00.0277 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:00.0359 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Continue]. @30-11-2020 01:17:03.0836 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [1]. @30-11-2020 01:17:06.0369 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:06.0468 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Continue]. @30-11-2020 01:17:10.0049 AM
+[ReportManager] Checking that comment is added..... @30-11-2020 01:17:10.0051 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:17:10.0052 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:10.0222 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [$100.00]. @30-11-2020 01:17:10.0438 AM
+[ReportManager] Item price is equal to expected price in cart $100.00 @30-11-2020 01:17:10.0439 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [$100.00]. @30-11-2020 01:17:10.0597 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [$105.00]. @30-11-2020 01:17:10.0801 AM
+[ReportManager] Total price: $105.00 includes the flat shipping rate: 5.00 @30-11-2020 01:17:10.0802 AM
+[ReportManager] Checking item price and flat shipping rate equal expected..... @30-11-2020 01:17:10.0802 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:17:10.0804 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:10.0905 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Confirm Order]. @30-11-2020 01:17:13.0244 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:13.0977 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Your order has been placed!]. @30-11-2020 01:17:14.0128 AM
+[ReportManager] Item order has been placed successfully and message displayed is: Your order has been placed! @30-11-2020 01:17:14.0128 AM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-11-2020 01:17:14.0228 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [0 item(s) - $0.00]. @30-11-2020 01:17:14.0348 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [0 item(s) - $0.00]. @30-11-2020 01:17:14.0471 AM
+[ReportManager] Success! No items found in shopping cart: 0 item(s) - $0.00 @30-11-2020 01:17:14.0472 AM
+[ReportManager] Checking that success message is displayed successfully..... @30-11-2020 01:17:14.0472 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-11-2020 01:17:14.0473 AM
+[ReportManager] Successfully created attachment [Video Recording - UserCanAddItemsToShoppingCartAndConfirmOrder] @30-11-2020 01:17:33.0524 AM
+[ReportManager] Successfully created attachment [Animated Gif - UserCanAddItemsToShoppingCartAndConfirmOrder] @30-11-2020 01:17:33.0543 AM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-11-2020 01:17:34.0399 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v4.3]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################
+[ReportManager] AfterMethod is called @30-11-2020 01:17:33.0596 AM
+[ReportManager] Test Case is passed @30-11-2020 01:17:33.0597 AM
+[ReportManager] Close All Browser @30-11-2020 01:17:33.0597 AM
+[ReportManager] Successfully Closed All Browsers. @30-11-2020 01:17:34.0398 AM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-11-2020 01:17:34.0399 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v4.3]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log: ] @30-11-2020 01:17:34.0403 AM
+
+################################################################################################################################################
+Test Closure Activities
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-11-2020 01:17:34.0420 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v4.3]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################

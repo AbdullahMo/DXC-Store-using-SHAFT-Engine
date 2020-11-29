@@ -51,7 +51,7 @@ public class ShoppingCart_ComparisonTest extends TestBase{
 		boolean itemNameIsDisplayed = shoppingCartPageObject.checkItemNameIsDisplayed("Samsung");
 		Assertions.assertTrue(itemNameIsDisplayed, pos_assertionType, "Check item name is displayed..");
 		
-		boolean itemPriceIsDisplayed = shoppingCartPageObject.checkItemPrice("199.99","199.99");
+		boolean itemPriceIsDisplayed = shoppingCartPageObject.checkItemPrice("$199.99","$199.99");
 		Assertions.assertTrue(itemPriceIsDisplayed, pos_assertionType, "Check item price is displayed as expected..");
 		
 		homePageObject.navigateToMenuItemSecondLevel("Laptops & Notebooks", "Show All Laptops & Notebooks");

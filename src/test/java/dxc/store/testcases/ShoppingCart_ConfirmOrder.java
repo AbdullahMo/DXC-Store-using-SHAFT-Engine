@@ -56,7 +56,7 @@ public class ShoppingCart_ConfirmOrder extends TestBase {
 		Assertions.assertTrue(itemNameDisplayedd, pos_assertionType,
 				"Checking that item is displayed in shopping cart page..");
 
-		boolean itemPrice = shoppingCartPageObject.checkItemPrice("100.00", "100.00");
+		boolean itemPrice = shoppingCartPageObject.checkItemPrice("$100.00", "$100.00");
 		Assertions.assertTrue(itemPrice, pos_assertionType, "Checking that item price is as expected..");
 
 		shoppingCartPageObject.navigateToCheckOutPage();

@@ -24,12 +24,13 @@ public class CheckOutSuccessPage extends PageBase {
 			ReportManager.log("Item order has been placed successfully and message displayed is: "
 					+ ElementActions.getText(driver, successMessage));
 		}
-		if (ElementActions.isElementDisplayed(driver, shoppingCartButton)) {
-			if (ElementActions.getText(driver, shoppingCartButton).equals("0 item(s) - $0.00")) {
+		if (ElementActions.isElementDisplayed(driver, shoppingCartButton) 
+				&& ElementActions.getText(driver, shoppingCartButton).equals("0 item(s) - $0.00"))
+			{
 				ReportManager.log("Success! No items found in shopping cart: " + ElementActions.getText(driver, shoppingCartButton));
 				return true;
 			}
-		}
+		
 		return false;
 	}
 

@@ -131,10 +131,11 @@ public class CheckOutPage extends PageBase {
 	public boolean checkItemPriceAndFlatShippingRate(String price, String shippingRate, String totalPrice) {
 		wait = new WebDriverWait(driver, 10);
 		if (ElementActions.isElementDisplayed(driver, By.xpath("//table/tbody/tr/td[5][contains(text(),'" + price + "')]"))) {
-			ReportManager.log("Item price is equal to expected price in cart " + ElementActions.getText(driver, By.xpath("//table/tbody/tr/td[5][contains(text(),'" + price + "')]")));
+			By targetPrice = By.xpath("//table/tbody/tr/td[5][contains(text(),'" + price + "')]");
+			ReportManager.log("Item price is equal to expected price in cart " + ElementActions.getText(driver, targetPrice));
 			try {
 				double calculatePrice = 0;
-				calculatePrice += readAndAddConvertedPrice(driver.findElement(By.xpath("//table/tbody/tr/td[5][contains(text(),'" + price + "')]")).getText());
+				calculatePrice += readAndAddConvertedPrice(ElementActions.getText(driver, targetPrice));
 				
 				calculatePrice += readAndAddConvertedPrice(driver.findElement(By.xpath("//table/tfoot/tr[2]/td[2][contains(text(),'"+ shippingRate +"')]")).getText());
 				

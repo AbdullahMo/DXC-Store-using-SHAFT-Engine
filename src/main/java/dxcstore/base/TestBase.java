@@ -54,7 +54,6 @@ public class TestBase {
 	
 	public void openBrowser() {
 		
-		//Utils.runWindowsCommand("taskkill /f /im chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		options.addArguments("disable-infobars");

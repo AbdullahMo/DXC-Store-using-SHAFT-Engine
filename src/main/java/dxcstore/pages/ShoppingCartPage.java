@@ -49,9 +49,9 @@ public class ShoppingCartPage extends PageBase {
 			setQuantity();
 			By itemUnitPrice = By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[5]");
 			By itemTotalPrice = By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[6]");
-			if (ElementActions.isElementDisplayed(driver, itemUnitPrice)) {
+			if (ElementActions.isElementDisplayed(driver, itemUnitPrice) && ElementActions.getText(driver, itemUnitPrice).equals(uPrice)) {
 				ReportManager.log("Found Item Unit Price as Expected: " + itemUnitPrice);
-				if (ElementActions.isElementDisplayed(driver, itemTotalPrice)) {
+				if (ElementActions.isElementDisplayed(driver, itemTotalPrice) && ElementActions.getText(driver, itemTotalPrice).equals(tPrice)) {
 					ReportManager.log("Found Item Total Price as Expected: " + itemTotalPrice);
 					return true;
 				}
