@@ -39,7 +39,6 @@ public class ShoppingCart_ConfirmOrder extends TestBase {
 		homePageObject.navigateToPageUsingAction("My Account", "Login");
 		loginPageObject.userLogin("testdumpemail66112333@hotmail.com", "SuperSecretPassword!");
 
-		// homePageObject.navigateToShowAllMP3Page();
 		homePageObject.navigateToMenuItemSecondLevel("MP3 Players", "Show All MP3 Players");
 		mp3PlayersPageObject.addItemToCart();
 
