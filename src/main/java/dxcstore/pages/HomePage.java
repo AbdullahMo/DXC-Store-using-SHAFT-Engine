@@ -72,10 +72,8 @@ public class HomePage extends PageBase {
 
 	// For items that has a dropdown
 	public void navigateToMenuItemSecondLevel(String menuItem, String secondLvlMenuItem) {
-		a = new Actions(driver);
-		a.moveToElement(driver.findElement(By.xpath("//ul/li/a[contains(text(),'" + menuItem + "')]"))).perform();
-		a.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'" + secondLvlMenuItem + "')]"))).click()
-				.build().perform();
+		ElementActions.click(driver, By.xpath("//ul/li/a[contains(text(),'" + menuItem + "')]"));
+		ElementActions.click(driver, By.xpath("//a[contains(text(),'" + secondLvlMenuItem + "')]"));
 	}
 
 	@Step("Checking that user is logged in step..")

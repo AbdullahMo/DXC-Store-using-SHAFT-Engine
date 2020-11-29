@@ -22,24 +22,18 @@ public class ShoppingCartPage extends PageBase {
 	// private Properties properties;
 	private By myAccountBtn = By.cssSelector("a[title='My Account']");
 	private By logOutBtn = By.xpath("//li/a[contains(text(),'Logout')]");
-	
 
 	public ShoppingCartPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public boolean checkItemNameIsDisplayed(String itemName) {
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//wait = new WebDriverWait(driver, 10);
-		//List<WebElement> itemNames = driver.findElements(By.xpath("//form/div/table/tbody/tr/td[2]"));
 		List<String> myItemsList = new ArrayList<String>();
 		myItemsList.add(itemName);
-		
-		
+
 		for (int i = 0; i < myItemsList.size(); i++) {
-			//WebElement item = driver.findElement(By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[2]/a"));
 			By itemLabelCurrent = By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[2]/a");
-			if (ElementActions.isElementDisplayed(driver,itemLabelCurrent)) {
+			if (ElementActions.isElementDisplayed(driver, itemLabelCurrent)) {
 				ReportManager.log("Found item in cart: " + itemLabelCurrent);
 				return true;
 
@@ -49,26 +43,16 @@ public class ShoppingCartPage extends PageBase {
 	}
 
 	public boolean checkItemPrice(String uPrice, String tPrice) {
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//wait = new WebDriverWait(driver, 10);
 		List<WebElement> itemTotalPrices = driver
 				.findElements(By.xpath("//form/div/table/tbody/tr/td[@class='text-right']"));
 		for (int i = 0; i < (itemTotalPrices.size()) / 2; i++) {
 			setQuantity();
-			//WebElement itemUPrice = driver.findElement(By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[5]"));
-			//WebElement itemTPrice = driver.findElement(By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[6]"));
 			By itemUnitPrice = By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[5]");
 			By itemTotalPrice = By.xpath("//form/div/table/tbody/tr[" + (i + 1) + "]/td[6]");
-			//if (wait.until(ExpectedConditions.visibilityOf(itemUPrice)).getText().contains(uPrice)
-				//	&& itemTPrice.getText().contains(tPrice)) {
-				//System.out.println("Item Unit Price is as Expected: " + itemUPrice.getText() + "\n"
-					//	+ "Item Total Price is as Expected: " + itemTPrice.getText());
-			//	return true;
-			//}
 			if (ElementActions.isElementDisplayed(driver, itemUnitPrice)) {
-				ReportManager.log("Found Item Unit Price as Expected: "+ itemUnitPrice);
-				if(ElementActions.isElementDisplayed(driver, itemTotalPrice)) {
-					ReportManager.log("Found Item Total Price as Expected: "+ itemTotalPrice);
+				ReportManager.log("Found Item Unit Price as Expected: " + itemUnitPrice);
+				if (ElementActions.isElementDisplayed(driver, itemTotalPrice)) {
+					ReportManager.log("Found Item Total Price as Expected: " + itemTotalPrice);
 					return true;
 				}
 			}
@@ -94,7 +78,6 @@ public class ShoppingCartPage extends PageBase {
 	}
 
 	public boolean checkItemDate(String date) {
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		By dateElement = By.xpath("//small[contains(text(),'Delivery Date:')]");
 		if (ElementActions.getText(driver, dateElement).contains(date)) {
 			ReportManager.log("Success! Found date as expected: " + ElementActions.getText(driver, dateElement));
@@ -124,7 +107,7 @@ public class ShoppingCartPage extends PageBase {
 					ReportManager.log("Item Total Price is: " + totalStringValue);
 					totalStringValue = totalStringValue.substring(1);
 					totalCount += Double.parseDouble(totalStringValue);
-					ReportManager.log("Item Total Price so far is: "+ totalCount);
+					ReportManager.log("Item Total Price so far is: " + totalCount);
 					totalStringValue = null;
 
 				}
@@ -132,7 +115,7 @@ public class ShoppingCartPage extends PageBase {
 			}
 			if (totalCount == total) {
 				ReportManager.log("Total price is matching the expected value: " + totalCount);
-				
+
 				return true;
 			} else {
 				ReportManager.log("Found different price!: " + totalCount);
@@ -147,11 +130,18 @@ public class ShoppingCartPage extends PageBase {
 		return false;
 	}
 
+	public void navigateToCheckOutPage() {
+		By checkOutBtn = By.cssSelector("a[class='btn btn-primary']");
+		if (ElementActions.isElementDisplayed(driver, checkOutBtn)) {
+			ElementActions.click(driver, checkOutBtn);
+		}
+	}
+
 	public void userLogout() {
-		if(ElementActions.isElementDisplayed(driver, myAccountBtn)) {
+		if (ElementActions.isElementDisplayed(driver, myAccountBtn)) {
 			clickOnBtn(driver, myAccountBtn);
 			clickOnBtn(driver, logOutBtn);
 		}
-	
+
 	}
 }

@@ -8,7 +8,7 @@ import com.shaft.validation.Assertions;
 import dxcstore.base.TestBase;
 import dxcstore.pages.HomePage;
 import dxcstore.pages.ItemDetailsPage;
-import dxcstore.pages.LaptopsPage;
+import dxcstore.pages.ProductDetailsPage;
 import dxcstore.pages.LoginPage;
 import dxcstore.pages.ShoppingCartPage;
 import dxcstore.pages.TabletsPage;
@@ -19,7 +19,7 @@ public class ShoppingCart_ComparisonTest extends TestBase{
 	LoginPage loginPageObject;
 	TabletsPage tabletsPageObject;
 	ShoppingCartPage shoppingCartPageObject;
-	LaptopsPage laptopsPageObject;
+	ProductDetailsPage productDetailsPageObject;
 	ItemDetailsPage itemDetailsPageObject;
 	
 	@BeforeMethod
@@ -29,7 +29,7 @@ public class ShoppingCart_ComparisonTest extends TestBase{
 		loginPageObject = new LoginPage(driver);
 		tabletsPageObject = new TabletsPage(driver);
 		shoppingCartPageObject = new ShoppingCartPage(driver);
-		laptopsPageObject = new LaptopsPage(driver);
+		productDetailsPageObject = new ProductDetailsPage(driver);
 		itemDetailsPageObject = new ItemDetailsPage(driver);
 		
 	}
@@ -56,7 +56,7 @@ public class ShoppingCart_ComparisonTest extends TestBase{
 		
 		homePageObject.navigateToMenuItemSecondLevel("Laptops & Notebooks", "Show All Laptops & Notebooks");
 		
-		laptopsPageObject.addItemToCart("HP LP3065");
+		productDetailsPageObject.addItemToCart("HP LP3065");
 
 		itemDetailsPageObject.chooseNewDateAndAddToCart();
 		homePageObject.navigateToTopMenuFirstLevel("Shopping Cart");

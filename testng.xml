@@ -8,6 +8,7 @@
 			<class name="dxc.store.testcases.login_negativeTest" />
 		    <class name="dxc.store.testcases.login_positiveTest" />
 			<class name="dxc.store.testcases.ShoppingCart_ComparisonTest" />
+			<class name="dxc.store.testcases.ShoppingCart_ConfirmOrder" />
 		</classes>
 	</test>
 </suite>
