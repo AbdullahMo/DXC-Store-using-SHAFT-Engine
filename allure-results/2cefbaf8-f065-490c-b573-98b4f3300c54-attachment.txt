@@ -1,0 +1,21 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 2] test cases in the current suite
+Test Method:		[dxc.store.testcases.login_positiveTest.testLoginPositive]
+################################################################################################################################################
+[ReportManager] Element Action [type] successfully performed. With the following test data [anyemailtestasd998756188771@hotmail.com]. @29-11-2020 17:21:46.0523 PM
+[ReportManager] Element Action [type] successfully performed. With the following test data [SuperSecretPassword!]. @29-11-2020 17:21:46.0986 PM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201129-172123", Target File: "\1606663307823_testLoginPositive.gif"]. @29-11-2020 17:21:47.0902 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Login]. @29-11-2020 17:21:50.0861 PM
+[ReportManager] Checking that user is logged in..... @29-11-2020 17:21:50.0876 PM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @29-11-2020 17:21:50.0879 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [My Account]. @29-11-2020 17:21:53.0061 PM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @29-11-2020 17:21:53.0167 PM
+[ReportManager] User is logged in and Logout link is displayed.. @29-11-2020 17:21:53.0168 PM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Logout]. @29-11-2020 17:21:53.0307 PM
+[ReportManager] Logging out.. @29-11-2020 17:21:53.0307 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Logout]. @29-11-2020 17:21:56.0188 PM
+[ReportManager] Checking that log out link is displayed..... @29-11-2020 17:21:56.0193 PM
+[ReportManager] AssertEquals PASSED; Expected [Logout] and Actual [Logout]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @29-11-2020 17:21:56.0202 PM
+[ReportManager] Successfully created attachment [Video Recording - testLoginPositive] @29-11-2020 17:21:58.0897 PM
+[ReportManager] Successfully created attachment [Animated Gif - testLoginPositive] @29-11-2020 17:21:58.0904 PM

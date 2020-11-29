@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<test name="Test Cases">
+		<classes>
+			<!-- <class name="dxc.store.testcases.Register_PositiveScenario" /> <methods> 
+				<include name="testLoginPositive" /> </methods> -->
+			<class name="dxc.store.testcases.login_negativeTest" />
+		    <class name="dxc.store.testcases.login_positiveTest" />
+			<class name="dxc.store.testcases.ShoppingCart_ComparisonTest" />
+		</classes>
+	</test>
+</suite>
+

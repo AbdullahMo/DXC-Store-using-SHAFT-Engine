@@ -1,0 +1,11 @@
+[ReportManager] File Action [getAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @29-11-2020 17:21:24.0409 PM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @29-11-2020 17:21:24.0459 PM
+[ReportManager] Identifying OS/Browser combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @29-11-2020 17:21:24.0468 PM
+[ReportManager] Successfully Opened Google Chrome. @29-11-2020 17:21:31.0609 PM
+[ReportManager] URL is : http://opencart.abstracta.us/index.php?route=common/home @29-11-2020 17:21:31.0632 PM
+[ReportManager] Target URL: [http://opencart.abstracta.us/index.php?route=common/home] @29-11-2020 17:21:31.0636 PM
+[ReportManager] Initial URL: [data:,] @29-11-2020 17:21:32.0523 PM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201129-172123", Target File: "\1606663296535_beforeMethod.gif"]. @29-11-2020 17:21:37.0032 PM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [http://opencart.abstracta.us/index.php?route=common/home]. @29-11-2020 17:21:38.0402 PM
+[ReportManager] Successfully created attachment [Video Recording - beforeMethod] @29-11-2020 17:21:43.0046 PM
+[ReportManager] Successfully created attachment [Animated Gif - beforeMethod] @29-11-2020 17:21:43.0049 PM
